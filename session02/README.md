@@ -2,7 +2,7 @@
 ## MIDI Notes - C4 Major Scale
 
 | Note | MIDI key |
-|------+----------|
+|:-----|:----------|
 | C4   |       60 |
 | D4   |       62 |
 | E4   |       64 |
