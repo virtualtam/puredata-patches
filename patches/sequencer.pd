@@ -1,0 +1,42 @@
+#N canvas 1 661 1918 538 10;
+#X obj 144 363 dac~;
+#X obj 62 45 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1 1
+;
+#X obj 143 306 *~;
+#X floatatom 143 44 5 0 0 0 - - -, f 5;
+#X obj 25 153 - 12;
+#X obj 62 76 metronome-beat;
+#X obj 282 291 hsl 128 15 0 1 0 0 empty empty Volume 136 8 0 10 -262144
+-1 -1 12700 1;
+#X obj 62 118 random-note-generator;
+#X obj 25 175 mtof;
+#X obj 229 120 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 229 58 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 229 88 metro 100;
+#X floatatom 280 59 5 0 0 0 - - -, f 5;
+#X obj 142 226 mtof;
+#X obj 142 204 - 7;
+#X obj 25 197 klangfarbe osc~;
+#X text 16 13 STEP SEQUENCER - KLANGFARBE;
+#X obj 142 248 klangfarbe osc~;
+#X connect 1 0 5 0;
+#X connect 2 0 0 0;
+#X connect 2 0 0 1;
+#X connect 3 0 5 1;
+#X connect 4 0 8 0;
+#X connect 5 0 7 0;
+#X connect 6 0 2 1;
+#X connect 7 0 4 0;
+#X connect 7 0 14 0;
+#X connect 8 0 15 0;
+#X connect 9 0 15 1;
+#X connect 9 0 17 1;
+#X connect 10 0 11 0;
+#X connect 11 0 9 0;
+#X connect 12 0 11 1;
+#X connect 13 0 17 0;
+#X connect 14 0 13 0;
+#X connect 15 0 2 0;
+#X connect 17 0 2 0;

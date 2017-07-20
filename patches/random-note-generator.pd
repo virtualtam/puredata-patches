@@ -1,0 +1,14 @@
+#N canvas 1 661 1918 538 10;
+#X msg 29 131 60 62 64 65 67 69 71;
+#X obj 125 181 list-nth;
+#X obj 125 229 outlet;
+#X obj 170 32 inlet;
+#X floatatom 200 230 5 0 0 1 DEBUG - -, f 5;
+#X obj 170 87 random 7;
+#X text 25 11 RANDOM MIDI NOTE GENERATOR;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 1 0 4 0;
+#X connect 3 0 5 0;
+#X connect 5 0 1 1;
+#X connect 5 0 0 0;
