@@ -1,13 +1,12 @@
-#N canvas 1 661 1918 538 10;
+#N canvas 1 71 958 1128 10;
 #X obj 144 363 dac~;
-#X obj 62 45 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1 1
+#X obj 62 45 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
 ;
 #X obj 143 306 *~;
 #X floatatom 143 44 5 0 0 0 - - -, f 5;
 #X obj 25 153 - 12;
-#X obj 62 76 metronome-beat;
 #X obj 282 291 hsl 128 15 0 1 0 0 empty empty Volume 136 8 0 10 -262144
--1 -1 12700 1;
+-1 -1 0 1;
 #X obj 62 118 random-note-generator;
 #X obj 25 175 mtof;
 #X obj 229 120 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -21,22 +20,52 @@
 #X obj 25 197 klangfarbe osc~;
 #X text 16 13 STEP SEQUENCER - KLANGFARBE;
 #X obj 142 248 klangfarbe osc~;
-#X connect 1 0 5 0;
+#X obj 136 751 dac~;
+#X obj 54 433 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 135 694 *~;
+#X floatatom 135 432 5 0 0 0 - - -, f 5;
+#X obj 274 679 hsl 128 15 0 1 0 0 empty empty Volume 136 8 0 10 -262144
+-1 -1 12700 1;
+#X obj 54 506 random-note-generator;
+#X obj 17 563 mtof;
+#X obj 134 614 mtof;
+#X obj 134 592 - 7;
+#X text 16 398 STEP SEQUENCER - BELL;
+#X obj 17 585 bell;
+#X obj 62 76 metronome-beat;
+#X obj 54 464 metronome-beat;
+#X obj 134 636 bell;
+#X obj 17 541 + 12;
+#X connect 1 0 28 0;
 #X connect 2 0 0 0;
 #X connect 2 0 0 1;
-#X connect 3 0 5 1;
-#X connect 4 0 8 0;
-#X connect 5 0 7 0;
-#X connect 6 0 2 1;
-#X connect 7 0 4 0;
+#X connect 3 0 28 1;
+#X connect 4 0 7 0;
+#X connect 5 0 2 1;
+#X connect 6 0 4 0;
+#X connect 6 0 13 0;
 #X connect 7 0 14 0;
-#X connect 8 0 15 0;
-#X connect 9 0 15 1;
-#X connect 9 0 17 1;
-#X connect 10 0 11 0;
-#X connect 11 0 9 0;
-#X connect 12 0 11 1;
-#X connect 13 0 17 0;
-#X connect 14 0 13 0;
-#X connect 15 0 2 0;
-#X connect 17 0 2 0;
+#X connect 8 0 14 1;
+#X connect 8 0 16 1;
+#X connect 9 0 10 0;
+#X connect 10 0 8 0;
+#X connect 11 0 10 1;
+#X connect 12 0 16 0;
+#X connect 13 0 12 0;
+#X connect 14 0 2 0;
+#X connect 16 0 2 0;
+#X connect 18 0 29 0;
+#X connect 19 0 17 0;
+#X connect 19 0 17 1;
+#X connect 20 0 29 1;
+#X connect 21 0 19 1;
+#X connect 22 0 25 0;
+#X connect 22 0 31 0;
+#X connect 23 0 27 0;
+#X connect 24 0 30 0;
+#X connect 25 0 24 0;
+#X connect 27 0 19 0;
+#X connect 28 0 6 0;
+#X connect 29 0 22 0;
+#X connect 31 0 23 0;
