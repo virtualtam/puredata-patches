@@ -1,4 +1,4 @@
-#N canvas 1 71 1918 538 10;
+#N canvas 84 128 1604 538 10;
 #N canvas 0 50 450 250 (subpatch) 0;
 #X array \$0-bell 900 float 0;
 #X coords 0 1 899 -1 200 140 1 0 0;
@@ -19,8 +19,7 @@
 #X obj 869 137 bell-partial 3 0.0078125;
 #X obj 1019 137 bell-partial 3.76 0.00390625;
 #X obj 1193 137 bell-partial 4.07 0.00195312;
-#X obj 607 6 inlet;
-#X obj 607 27 mtof;
+#X obj 611 23 inlet;
 #X connect 1 0 2 0;
 #X connect 2 0 5 0;
 #X connect 6 0 3 0;
@@ -34,13 +33,12 @@
 #X connect 13 0 6 0;
 #X connect 14 0 6 0;
 #X connect 15 0 6 0;
-#X connect 16 0 17 0;
-#X connect 17 0 7 0;
-#X connect 17 0 8 0;
-#X connect 17 0 9 0;
-#X connect 17 0 10 0;
-#X connect 17 0 11 0;
-#X connect 17 0 12 0;
-#X connect 17 0 13 0;
-#X connect 17 0 14 0;
-#X connect 17 0 15 0;
+#X connect 16 0 7 0;
+#X connect 16 0 8 0;
+#X connect 16 0 9 0;
+#X connect 16 0 10 0;
+#X connect 16 0 11 0;
+#X connect 16 0 12 0;
+#X connect 16 0 13 0;
+#X connect 16 0 14 0;
+#X connect 16 0 15 0;

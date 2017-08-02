@@ -1,0 +1,36 @@
+#N canvas 9 15 802 503 10;
+#X obj 252 36 inlet~;
+#X obj 324 445 outlet~;
+#X obj 295 239 osc~;
+#X obj 369 39 inlet;
+#X obj 280 99 *~;
+#X obj 366 175 *~ 2;
+#X obj 495 179 *~ 4;
+#X obj 474 129 *~ 0.25;
+#X obj 345 134 *~;
+#N canvas 0 50 450 250 (subpatch) 0;
+#X array signal 200 float 5;
+#A 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+#X coords 0 4 199 -4 200 140 1 0 0;
+#X restore 562 303 graph;
+#X obj 147 305 metro 100;
+#X obj 147 258 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 150 385 tabwrite~ signal;
+#X obj 402 236 osc~;
+#X connect 0 0 4 0;
+#X connect 2 0 1 0;
+#X connect 2 0 12 0;
+#X connect 3 0 4 1;
+#X connect 4 0 2 0;
+#X connect 4 0 7 0;
+#X connect 4 0 8 0;
+#X connect 7 0 6 0;
+#X connect 8 0 5 0;
+#X connect 10 0 12 0;
+#X connect 11 0 10 0;

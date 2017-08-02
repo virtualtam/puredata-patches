@@ -1,0 +1,14 @@
+#N canvas 560 150 958 538 10;
+#X msg 88 194 60 62 64 65 67 69 71;
+#X obj 352 284 list-nth;
+#X obj 352 332 outlet;
+#X obj 393 42 inlet;
+#X floatatom 297 333 5 0 0 0 - - -, f 5;
+#X obj 390 97 random 7;
+#X msg 277 197 60 63 67 65 68 70 72;
+#X connect 1 0 2 0;
+#X connect 1 0 4 0;
+#X connect 3 0 5 0;
+#X connect 5 0 1 1;
+#X connect 5 0 6 0;
+#X connect 6 0 1 0;

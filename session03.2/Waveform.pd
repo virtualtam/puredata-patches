@@ -1,0 +1,10 @@
+#N canvas 690 57 750 567 10;
+#X obj 152 44 inlet;
+#X obj 389 40 inlet;
+#X obj 499 56 select nope triangle;
+#X obj 370 198 list-nth;
+#X msg 247 129 sin triangle square;
+#X obj 239 288 trigger;
+#X connect 1 0 4 0;
+#X connect 1 0 3 1;
+#X connect 4 0 3 0;
