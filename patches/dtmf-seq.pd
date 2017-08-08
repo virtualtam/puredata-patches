@@ -1,15 +1,15 @@
-#N canvas 1 71 958 1008 10;
-#X obj 27 344 dac~;
+#N canvas 961 41 958 542 10;
+#X obj 27 342 dac~;
 #X obj 27 56 metro 1000;
 #X obj 27 35 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
 ;
-#X floatatom 91 36 5 0 0 0 - - -, f 5;
-#X obj 27 95 dtmf;
+#X floatatom 84 36 5 0 0 0 - - -, f 5;
 #X obj 27 73 random 15;
 #X text 24 7 DTMF Sequencer;
-#X connect 1 0 5 0;
+#X obj 27 93 dtmf/keypad;
+#X connect 1 0 4 0;
 #X connect 2 0 1 0;
 #X connect 3 0 1 1;
-#X connect 4 0 0 0;
-#X connect 4 0 0 1;
-#X connect 5 0 4 0;
+#X connect 4 0 6 0;
+#X connect 6 0 0 0;
+#X connect 6 0 0 1;
