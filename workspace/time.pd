@@ -1,10 +1,10 @@
-#N canvas 1 41 958 1135 10;
-#X obj 46 35 ../patches/metronome;
+#N canvas 1 41 1918 545 10;
 #X obj 46 120 dac~;
 #X obj 107 118 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X floatatom 169 118 5 0 0 0 - - -, f 5;
-#X connect 0 0 1 0;
-#X connect 0 0 1 1;
-#X connect 0 1 2 0;
-#X connect 0 2 3 0;
+#X obj 46 35 metronome;
+#X connect 3 0 0 0;
+#X connect 3 0 0 1;
+#X connect 3 1 1 0;
+#X connect 3 2 2 0;
