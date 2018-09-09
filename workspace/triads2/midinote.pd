@@ -1,0 +1,18 @@
+#N canvas 1 41 958 1135 10;
+#X obj 503 152 inlet;
+#X obj 577 152 inlet;
+#X obj 552 265 noteout 1;
+#X obj 484 232 makenote 127 500;
+#X obj 503 177 t f b;
+#X obj 643 153 inlet;
+#X msg 530 209 100;
+#X obj 577 173 * 2;
+#X connect 0 0 4 0;
+#X connect 1 0 7 0;
+#X connect 3 0 2 0;
+#X connect 3 1 2 1;
+#X connect 4 0 3 0;
+#X connect 4 1 6 0;
+#X connect 5 0 2 2;
+#X connect 6 0 3 1;
+#X connect 7 0 3 2;
