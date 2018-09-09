@@ -8,9 +8,9 @@
 #X obj 96 76 random 8;
 #X obj 166 76 random 8;
 #X obj 236 76 random 8;
-#X obj 96 98 \$2;
-#X obj 166 98 \$2;
-#X obj 236 98 \$2;
+#X obj 96 98 scale/\$2;
+#X obj 166 98 scale/\$2;
+#X obj 236 98 scale/\$2;
 #X connect 0 0 5 0;
 #X connect 1 0 0 0;
 #X connect 2 0 0 1;
