@@ -1,0 +1,28 @@
+#N canvas 0 42 1920 1015 10;
+#X obj 204 259 noteout 1;
+#X obj 204 236 makenote 127 20;
+#X obj 204 216 + 48;
+#X obj 225 129 hradio 15 0 0 4 empty empty octave 0 -8 0 10 -262144
+-1 -1 0;
+#X obj 225 195 * 12;
+#X obj 225 176 + 3;
+#X obj 194 14 inlet;
+#X obj 294 14 inlet;
+#X floatatom 294 129 5 0 0 2 duration - -, f 5;
+#X obj 234 14 loadbang;
+#X msg 214 56 0;
+#X msg 264 56 20;
+#X connect 1 0 0 0;
+#X connect 1 1 0 1;
+#X connect 2 0 1 0;
+#X connect 3 0 5 0;
+#X connect 4 0 2 1;
+#X connect 5 0 4 0;
+#X connect 6 0 2 0;
+#X connect 7 0 8 0;
+#X connect 8 0 1 2;
+#X connect 9 0 10 0;
+#X connect 9 0 11 0;
+#X connect 10 0 3 0;
+#X connect 11 0 8 0;
+#X coords 0 -1 1 1 124 53 1 222 95;
